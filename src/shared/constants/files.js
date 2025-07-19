@@ -21,6 +21,33 @@ const files = [
   },
   {
     type: FileTypes.Folder,
+    name: "GSAP",
+    children: [
+      {
+        type: FileTypes.Folder,
+        name: "Basics",
+        children: [
+          {
+            type: FileTypes.Element,
+            name: "Box Animation",
+            element: lazy(() => import("../../gsap/BoxAnimation.jsx")),
+          },
+          {
+            type: FileTypes.Element,
+            name: "Sliding Text",
+            element: lazy(() => import("../../gsap/SlidingText.jsx")),
+          },
+          {
+            type: FileTypes.Element,
+            name: "Heading Animation",
+            element: lazy(() => import("../../gsap/HeadingAnimation.jsx")),
+          },
+        ],
+      },
+    ],
+  },
+  {
+    type: FileTypes.Folder,
     name: "Framer Motion",
     children: [
       {

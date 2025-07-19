@@ -7,9 +7,8 @@ function AppRoutes() {
   return (
     <Routes>
       <Route element={<Layout />}>
-        <Route path="/" element={<IndexPage />} />
+        <Route path="*" element={<IndexPage />} />
       </Route>
-      <Route path="/gsap" element={<GSAPIndex />} />
     </Routes>
   );
 }
